@@ -4,16 +4,18 @@ This repository demonstrates how to use `git bisect`.
 When you check out `master`, the tests in `test1.js` fail.
 When did this bug get introduced?
 
-[![Git bisect in action](https://i.imgur.com/LgvSeV6.png)](https://youtu.be/dfDBNcYRKcE "manual git bisect")
+[![Git bisect in action](https://i.imgur.com/LgvSeV6.png)](https://youtu.be/dfDBNcYRKcE 'manual git bisect')
 
 ## Installation
 
 Clone the repository and install the dependencies.
 
-```bash 
+```bash
 git clone https://github.com/fhinkel/git-bisect-demo.git
 npm install
 ```
+
+Update to readme
 
 `npm test` passes, but `npx mocha test1.js` fails. We forgot to
 add these tests to the `test` script. At some point in the
@@ -33,7 +35,7 @@ npx mocha test1.js # Double check that everything was green.
 git bisect good
 ```
 
-Follow the interactive prompt. At every step, run the tests with `npx mocha test*.js` and mark the commit as either `good` or `bad`. 
+Follow the interactive prompt. At every step, run the tests with `npx mocha test*.js` and mark the commit as either `good` or `bad`.
 
 If you can't run the tests in a meaningful way for a specific revision, you can `skip` that revision.
 
@@ -48,6 +50,7 @@ so we chatch bugs in the future.
 You're all done. Great job!
 
 ## Automating `git bisect`
+
 Instead of manually running `git bisect`, you can automate the process. Simply
 pass a command to `git bisect run` and let `git` do the rest.
 
@@ -55,7 +58,8 @@ pass a command to `git bisect run` and let `git` do the rest.
 git bisect run npx mocha test1.js
 ```
 
-[![Automated git bisect in action](https://i.imgur.com/WtVUh12.png)](https://www.youtube.com/watch?v=pFavI1XgxYs "automate git bisect")
+[![Automated git bisect in action](https://i.imgur.com/WtVUh12.png)](https://www.youtube.com/watch?v=pFavI1XgxYs 'automate git bisect')
 
 ## Contributing
+
 Pull requests and issues welcome.
