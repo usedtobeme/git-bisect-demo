@@ -15,8 +15,6 @@ git clone https://github.com/fhinkel/git-bisect-demo.git
 npm install
 ```
 
-Update to readme
-
 `npm test` passes, but `npx mocha test1.js` fails. We forgot to
 add these tests to the `test` script. At some point in the
 past, the tests were all passing. When did the bug get introduced?
