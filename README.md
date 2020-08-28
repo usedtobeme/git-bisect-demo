@@ -15,7 +15,8 @@ git clone https://github.com/fhinkel/git-bisect-demo.git
 npm install
 ```
 
-Esta es otra linea
+This is a new line
+Otra vez
 
 Update to readme
 
