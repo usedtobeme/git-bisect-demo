@@ -15,6 +15,8 @@ git clone https://github.com/fhinkel/git-bisect-demo.git
 npm install
 ```
 
+Esta es otra linea
+
 Update to readme
 
 `npm test` passes, but `npx mocha test1.js` fails. We forgot to
